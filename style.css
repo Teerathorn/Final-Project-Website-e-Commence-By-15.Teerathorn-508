@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    color: #000;
+    font-family: 'Inter' , sans-serif;
+    overflow-x: hidden;
+}
+
+body {
+    cursor: none;
+}
+.cursor {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    transition: width0.3s ease-out, height0.3s ease-out, transform 0.1s ease-out, background-color 0.3s;
+}
+
+.cursor-active {
+    transform: translate(-50%, -50%) scale(2.5);
+    background-color: rgba(0, 0, 0, 0.1);
+    border: #555;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1000;
+    padding: 20px 5%;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.brand-name {
+    font-family: 'Platfair Display' , serif;
+    font-size: 38px;
+    font-weight: 700;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    color: #000;
+}
+
+nav .nav-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 50px;
+}
+nav .nav-links li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 11px;
+    letter-spacing: 3px;
+    transition: 0.3s;
+    font-weight: 400;
+}
+
+nav .nav-links li a:hover {
+    opacity: 0.5;
+}
+
+.cart-wrapper {
+    font-size: 13px;
+    letter-spacing: 1px;
+    min-width: 100px;
+}
+
+.section-container {
+    padding: 120px 5% 80px 5%;
+}
+
+.section-title {
+    font-family: 'Playfair Display' , serif;
+    font-size: 32px;
+    margin-bottom: 40px;
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+.best-seller-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+
+.product-card {
+    position: relative;
+    z-index: 1;
+}
+
+.product-img {
+    position: relative;
+    overflow: hidden;
+    background: #f7f7f7;
+    margin-bottom: 15px;
+}
+
+.product-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transfrom 1.2s cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+.product-card:hover img {
+    transform: scale(1.1);
+}
+
+.btn-add {
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    background: #000;
+    color: #fff;
+    border: none;
+    transition: 0.4s ease;
+}
+
+.product-card:hover .btn-add {
+    bottom: 0;
+}
+
+.horizontal-scroll {
+    display: flex;
+    overflow: auto;
+    gap: 40px;
+    padding: 40px 5%;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.horizontal-scroll {
+    display: flex;
+    overflow-x: auto;
+    gap: 25px;
+    padding-bottom: 20px;
+    scroll-behavior: smooth;
+}
+
+.horizontal-scroll::-webkit-scrollbar {
+    height: 2px;
+}
+
+.horizontal-scroll::-webkit-scrollbar-thumb {
+    background: #000;
+}
+
+.product-card.small {
+    min-width: 250px;
+}

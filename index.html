@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teerathorn : Perfume Lab</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="cursor"></div>
+
+    <header>
+<div class="header-top">
+    <div class="cart-wrapper">
+        <span class="cart-icon">🛒</span>
+        <span id="money-display">0.00 ฿</span>
+    </div>
+    <h1 class="brand-name">Puxteezeya</h1>
+    <div style="width: 100px;"></div> </div>
+
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">SHOP</a></li>
+            <li><a href="#">COLLECTION</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <main>
+        <section class="section-container">
+            <h2 class="section-title">BEST SELLER</h2>
+            <div class="best-seller-grid">
+                <div class="product-card large">
+                    <div class="product-img">
+                        <img src="vltn.avif" alt="Perfume 1">
+                        <button class="btn-add" onclick="updateMoney(4560)">ADD TO CART</button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Valentino Born In Roma Extradose</h3>
+                        <p>4,560฿</p>
+                    </div>
+                </div>
+                <div class="product-card large">
+                    <div class="product-img">
+                            <img src="le.jpg" alt="Perfume 2">
+                            <button class="btn-add" onclick="updateMoney(5940)">ADD TO CART</button>
+                        </div>
+                        <div class="product-info">
+                            <h3>Jean Paul Gaultier Le Beau Le Parfum</h3>
+                            <p>5,940฿</p>
+                        </div>
+                    </div>
+                    <div class="product-card large">
+                        <div class="product-img">
+                            <img src="str.jpg" alt="Perfume 3">
+                            <button class="btn-add" onclick="updateMoney(4420)">ADD TO CART</button>
+                        </div>
+                        <div class="product-info">
+                            <h3>Stronger With You Intensely</h3>
+                            <p>4,420฿</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <section class="section-container">
+                <h2 class="section-title">FOR MEN</h2>
+                <div class="horizontal-scroll">
+                    <div class="product-card small">
+                        <div class="product-img">
+                            <img src="YSL.webp"alt="Men 1">
+                            <button class="btn-add" onclick="updateMoney(4190)">ADD TO CART</button>
+                        </div>
+                        <h3>Y Eau de Parfum Intense</h3><p>4,190฿</p>
+                    </div>
+                    <div class="product-card small"><div class="product-img"><img src="Dior.jpg" alt=""><button class="btn-add" onclick="updateMoney(3400)">ADD TO CART</button></div><h3>Dior Sauvage</h3><p>3,400฿</p></div>
+                    <div class="product-card small"><div class="product-img"><img src="El.webp" alt=""><button class="btn-add" onclick="updateMoney(3400)">ADD TO CART</button></div><h3>Dior Sauvage</h3><p>3,400฿</p></div>
+                    <div class="product-card small"><div class="product-img"><img src="EROS.webp" alt=""><button class="btn-add" onclick="updateMoney(3400)">ADD TO CART</button></div><h3>Dior Sauvage</h3><p>3,400฿</p></div>
+                    <div class="product-card small"><div class="product-img"><img src="CREED.jpg" alt=""><button class="btn-add" onclick="updateMoney(3400)">ADD TO CART</button></div><h3>Dior Sauvage</h3><p>3,400฿</p></div>
+                </div>
+            </section>
+
+            <section class="section-container">
+                <h2 class="section-title">FOR WOMAN</h2>
+                <div class="horizontal-scroll">
+                    <div class="product-card small">
+                        <div class="product-img">
+                            <img src="tom.webp"alt="Women 1">
+                            <button class="btn-add" onclick="updateMoney(4990)">ADD TO CART</button>
+                        </div>
+                        <h3>YSL</h3><p>4,990฿</p>
+                    </div>
+                    <div class="product-card small"><div class="product-img"><img src="valen w.webp" alt=""><button class="btn-add" onclick="updateMoney(3400)">ADD TO CART</button></div><h3>Dior Sauvage</h3><p>3,400฿</p></div>
+                    <div class="product-card small"><div class="product-img"><img src="mi.png" alt=""><button class="btn-add" onclick="updateMoney(3400)">ADD TO CART</button></div><h3>Dior Sauvage</h3><p>3,400฿</p></div>
+                    <div class="product-card small"><div class="product-img"><img src="pra.webp" alt=""><button class="btn-add" onclick="updateMoney(3400)">ADD TO CART</button></div><h3>Dior Sauvage</h3><p>3,400฿</p></div>
+                    <div class="product-card small"><div class="product-img"><img src="cha.webp" alt=""><button class="btn-add" onclick="updateMoney(3400)">ADD TO CART</button></div><h3>Dior Sauvage</h3><p>3,400฿</p></div>
+                </div>
+            </section>        
+    </main>
+
+    <footer style="padding: 50px; text-align: center; background: #000; color: #fff; margin-top: 100px;">
+        <p>© 2026 LUXE FRAGRANCE. ALL RIGHTS RESERVED</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <div class="cursor"></div>
+</body>
+</html>
